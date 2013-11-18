@@ -29,7 +29,7 @@
       }
 
       return vertices;
-    }
+    };
 
     var vertices = this.generateVertices();
     GameObjects.MovingObject.call(this, pos, vel, radius, color, vertices);
@@ -43,7 +43,7 @@
     var vx = Math.random() * 10 - 5;
     var vy = Math.random() * 10 - 5;
     return {x: vx, y: vy};
-  }
+  };
 
   Asteroid.randomAsteroid = function(dimX, dimY) {
     var x = Math.floor(Math.random() * dimX);
